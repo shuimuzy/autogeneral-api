@@ -1,6 +1,6 @@
 # Auto & General test API
 
-This project is to implement CRUD API with technologies like Spring Boot, Spring Data JPA, MySQL, JUnit, etc.
+This application is to implement CRUD API with technologies like Spring Boot, Spring Data JPA, MySQL, JUnit, etc.
 
 ## Requirements
 Java - 1.8.x
