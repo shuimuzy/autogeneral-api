@@ -26,7 +26,7 @@ Maven - 3.x.x
 4. Build and run the application using Maven, execute the following commands in Windows command prompt.
 ```
    mvn package
-   java -jar target/auto-general-X.0.0.jar
+   java -jar target/autogeneral-api-0.0.1.jar
 ```
 
 ## REST API Overview
