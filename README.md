@@ -23,7 +23,7 @@ Maven - 3.x.x
 
    - Change ```spring.datasource.username``` and ```spring.datasource.password``` as per your MySQL settings.
 
-4. Build and run the application using Maven, execute the following commands in Windows command prompt.
+4. Build and run the application using Maven, execute the following commands.
 ```
    mvn package
    java -jar target/autogeneral-api-0.0.1.jar
@@ -37,7 +37,7 @@ Maven - 3.x.x
 ```
   POST /todo
 ```
-  Create a Todo item and ***Body*** is required. The ***Body*** as input string must be between 1 and 50 chars long. 
+  Create a Todo item and ***Body*** is required. 
 ```
   GET /todo/{id} 
 ```
@@ -45,7 +45,7 @@ Maven - 3.x.x
 ```
   PATCH /todo/{id} 
 ```
-  Update a Todo item and ***Body*** is required. The ***Body*** as input string must be between 1 and 50 chars long.
+  Update a Todo item and ***Body*** is required. 
   
 ### Response with status code and Json message
 
