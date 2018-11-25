@@ -28,21 +28,20 @@ Maven - 3.x.x
    mvn package
    java -jar target/auto-general-X.0.0.jar
 ```
-   Then the application can be accessible at http://localhost:8080.
 
 ## REST API Overview
 ```
   GET /tasks/validateBrackets/{inputStr}
 ```
-  Check if brackets in a string are balanced. Eg: GET /tasks/validateBrackets?input=(){}[]
+  Check if brackets in a string are balanced. Eg: GET http://localhost:8080/tasks/validateBrackets?input=(){}[] 
 ```
   POST /todo/{inputStr}
 ```
-  Create a Todo item. The input string must be between 1 and 50 chars long.
+  Create a Todo item. The input string must be between 1 and 50 chars long. 
 ```
   GET /todo/{id} 
 ```
-  Retrieve a specific Todo item by id. 
+  Retrieve a specific Todo item by id. Eg: GET http://localhost:8080/todo/1
 ```
   PATCH /todo/{id} 
 ```
