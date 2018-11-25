@@ -31,13 +31,13 @@ Maven - 3.x.x
 
 ## REST API Overview
 ```
-  GET /tasks/validateBrackets/{inputStr}
+  GET /tasks/validateBrackets
 ```
-  Check if brackets in a string are balanced. Eg: GET http://localhost:8080/tasks/validateBrackets?input=(){}[] 
+  Check if brackets in a string are balanced. For example, the input bracket strings "()" "{{}} "{([])}" are balanced while "(({{" "[((]" "{}}}}" are not balanced. Eg: GET http://localhost:8080/tasks/validateBrackets?input=(){}[] 
 ```
-  POST /todo/{inputStr}
+  POST /todo
 ```
-  Create a Todo item. The input string must be between 1 and 50 chars long. 
+  Create a Todo item and ***Body*** is required. The ***Body*** as input string must be between 1 and 50 chars long. 
 ```
   GET /todo/{id} 
 ```
@@ -45,7 +45,7 @@ Maven - 3.x.x
 ```
   PATCH /todo/{id} 
 ```
-  Update a Todo item. The input string must be between 1 and 50 chars long.
+  Update a Todo item and ***Body*** is required. The ***Body*** as input string must be between 1 and 50 chars long.
   
 ### Response with status code and Json message
 
